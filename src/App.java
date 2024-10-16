@@ -3,6 +3,7 @@ import letra.S;
 import letra.A;
 import letra.P;
 import letra.BA;
+import letra.BdoWhile;
 
 
 public class App {
@@ -13,6 +14,8 @@ public class App {
         A opA = new A();
         P opP = new P();
         BA opBA = new BA();
+        BdoWhile BdW = new BdoWhile();
+
 
         opB.drawB(tamano);
         System.out.println();
@@ -23,6 +26,8 @@ public class App {
         opP.drawP(tamano);
         System.out.println();
         opBA.drawBA(tamano);
+        System.out.println();
+        BdW.drawBdoWhile(tamano);
     }
     
 }
