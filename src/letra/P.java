@@ -2,12 +2,15 @@ package letra;
 
 public class P {
     public void drawP(int tamano) {
+        int ancho = tamano / 2 + 1; // Asegura que el ancho sea proporcional a la altura
+        int mitadAltura = tamano / 2;
+
         for (int fila = 1; fila <= tamano; fila++) {
-            for (int columna = 1; columna <= tamano; columna++) {
-                if(columna == 1
-                || fila == 1 &&columna < tamano*0.7
-                || fila == tamano/2+1 && columna < tamano*0.7
-                || columna == tamano/2+1 && fila <= tamano/2+1)
+            for (int columna = 1; columna <= ancho; columna++) {
+                if (columna == 1 // Línea vertical izquierda
+                    || (fila == 1 && columna < ancho) // Línea horizontal superior
+                    || (fila == mitadAltura + 1 && columna < ancho) // Línea horizontal media
+                    || (columna == ancho && fila <= mitadAltura + 1)) // Línea vertical derecha (mitad superior)
                 {
                     System.out.print("* ");
                 } else {
