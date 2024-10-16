@@ -2,24 +2,27 @@ import letra.B;
 import letra.S;
 import letra.A;
 import letra.P;
-
+import letra.BA;
 
 
 public class App {
     public static void main(String[] args) throws Exception {
         int tamano = 7;
-        B op = new B();
-        S opp = new S();
-        A oppp = new A();
-        P opppp = new P();
+        B opB = new B();
+        S opS = new S();
+        A opA = new A();
+        P opP = new P();
+        BA opBA = new BA();
 
-        op.drawB(tamano);
+        opB.drawB(tamano);
         System.out.println();
-        opp.drawS(tamano);
+        opS.drawS(tamano);
         System.out.println();
-        oppp.drawA(tamano);
+        opA.drawA(tamano);
         System.out.println();
-        opppp.drawP(tamano);
+        opP.drawP(tamano);
+        System.out.println();
+        opBA.drawBA(tamano);
     }
     
 }
