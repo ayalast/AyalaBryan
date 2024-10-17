@@ -1,15 +1,16 @@
-package letra;
+package letra.While;
 
-public class BA {
-    public void drawBA(int tamano) {
+public class BAwhile {
+    public void drawBAwhile(int tamano) {
         int anchoB = tamano / 2 + 1;
         int anchoA = tamano / 2 + 1;
         int espacioEntreLetras = 2;
         int anchoTotal = anchoB + espacioEntreLetras + anchoA;
 
-        for (int fila = 1; fila <= tamano; fila++) {
-            // Dibujar B
-            for (int columna = 1; columna <= anchoB; columna++) {
+        int fila = 1;
+        while (fila <= tamano) {
+            int columna = 1;
+            while (columna <= anchoB) {
                 if (columna == 1 
                     || (fila == 1 && columna <= anchoB - 1)
                     || (fila == tamano / 2 + 1 && columna <= anchoB - 1)
@@ -20,15 +21,17 @@ public class BA {
                 } else {
                     System.out.print("  ");
                 }
+                columna++;
             }
 
-            // Espacio entre letras
-            for (int e = 0; e < espacioEntreLetras; e++) {
+            int e = 0;
+            while (e < espacioEntreLetras) {
                 System.out.print("  ");
+                e++;
             }
-
-            // Dibujar A
-            for (int columna = 1; columna <= anchoA; columna++) {
+            
+            columna = 1;
+            while (columna <= anchoA) {
                 if (columna == 1 && fila != 1 
                     || columna == anchoA && fila != 1 
                     || fila == 1 && columna > 1 && columna < anchoA 
@@ -38,12 +41,12 @@ public class BA {
                 } else {
                     System.out.print("  ");
                 }
+                columna++;
             }
 
             System.out.println();
+            fila++;
         }
     }
-
 }
-
 

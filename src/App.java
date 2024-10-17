@@ -1,9 +1,10 @@
-import letra.B;
-import letra.S;
-import letra.A;
-import letra.P;
-import letra.BA;
-import letra.BdoWhile;
+import letra.DoWhile.SdoWhile;
+import letra.For.A;
+import letra.For.B;
+import letra.For.BA;
+import letra.For.P;
+import letra.For.S;
+
 
 
 public class App {
@@ -14,7 +15,7 @@ public class App {
         A opA = new A();
         P opP = new P();
         BA opBA = new BA();
-        BdoWhile BdW = new BdoWhile();
+        SdoWhile SW = new SdoWhile();
 
 
         opB.drawB(tamano);
@@ -27,7 +28,7 @@ public class App {
         System.out.println();
         opBA.drawBA(tamano);
         System.out.println();
-        BdW.drawBdoWhile(tamano);
+        SW.drawSdoWhile(tamano);
     }
     
 }

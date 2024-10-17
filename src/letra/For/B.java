@@ -1,4 +1,4 @@
-package letra;
+package letra.For;
 
 public class B {
     public void drawB(int tamano) {

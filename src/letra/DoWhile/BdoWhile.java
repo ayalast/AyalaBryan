@@ -1,4 +1,4 @@
-package letra;
+package letra.DoWhile;
 
 public class BdoWhile {
     public void drawBdoWhile(int tamano) {

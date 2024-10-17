@@ -1,4 +1,4 @@
-package letra;
+package letra.While;
 
 public class Bwhile {
     public void drawBwhile(int tamano) {

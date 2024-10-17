@@ -1,11 +1,13 @@
-package letra;
+package letra.While;
 
-public class S {
-    public void drawS(int tamano) {
+public class Swhile {
+    public void drawSwhile(int tamano) {
         int ancho = Math.max(4, tamano / 2); 
         
-        for (int fila = 1; fila <= tamano; fila++) {
-            for (int columna = 1; columna <= ancho; columna++) {
+        int fila = 1;
+        while (fila <= tamano) {
+            int columna = 1;
+            while (columna <= ancho) {
                 if (fila == 1 || fila == tamano || fila == tamano / 2 + 1 ||
                     (columna == 1 && fila <= tamano / 2 + 1) ||
                     (columna == ancho && fila > tamano / 2))
@@ -14,9 +16,10 @@ public class S {
                 } else {
                     System.out.print("  ");
                 }
+                columna++;
             }
             System.out.println();
+            fila++;
         }
     }
 }
-
