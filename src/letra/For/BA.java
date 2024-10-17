@@ -8,7 +8,6 @@ public class BA {
         int anchoTotal = anchoB + espacioEntreLetras + anchoA;
 
         for (int fila = 1; fila <= tamano; fila++) {
-            // Dibujar B
             for (int columna = 1; columna <= anchoB; columna++) {
                 if (columna == 1 
                     || (fila == 1 && columna <= anchoB - 1)
@@ -22,12 +21,10 @@ public class BA {
                 }
             }
 
-            // Espacio entre letras
             for (int e = 0; e < espacioEntreLetras; e++) {
                 System.out.print("  ");
             }
 
-            // Dibujar A
             for (int columna = 1; columna <= anchoA; columna++) {
                 if (columna == 1 && fila != 1 
                     || columna == anchoA && fila != 1 

@@ -1,4 +1,3 @@
-import letra.DoWhile.SdoWhile;
 import letra.For.A;
 import letra.For.B;
 import letra.For.BA;
@@ -15,7 +14,7 @@ public class App {
         A opA = new A();
         P opP = new P();
         BA opBA = new BA();
-        SdoWhile SW = new SdoWhile();
+        
 
 
         opB.drawB(tamano);
@@ -27,8 +26,6 @@ public class App {
         opP.drawP(tamano);
         System.out.println();
         opBA.drawBA(tamano);
-        System.out.println();
-        SW.drawSdoWhile(tamano);
     }
     
 }
